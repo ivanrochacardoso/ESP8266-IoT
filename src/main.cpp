@@ -118,13 +118,10 @@ void loop() {
 
     //Le a string cliente
     String req = client.readStringUntil('\r');
-    String tmp;
 
-    String tmp2;
-    //Mostra a string
+    //Mostra a string requisição
     Serial.println(req);
-    //Limpa dados/buffer
-    client.flush();
+
 
     //Trata a string do cliente
     if (req.indexOf("saida1_on") != -1) {
